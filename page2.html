@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo page 2</title>
+  </head>
+  <body>
+  <script src="/dist/data.js"></script>
+    <script>
+      window.optimizely = window.optimizely || [];
+      window.optimizely.push({
+        type: 'load',
+        data: mockData
+      });
+    </script>
+    <script src="/dist/client.js"></script>
+    <script>
+      window.optimizely.push({
+        type: 'activate',
+      });
+    </script>
+    <h1>Page 2</h1>
+  </body>
+</html>
