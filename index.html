@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="https://cdn.optimizely.com/js/4807256273846272.js"></script>
+  <!-- <script src="https://cdn.optimizely.com/js/4807256273846272.js"></script> -->
+  <script>
+    const mockData = {"accountId": "5935064", "namespace": "4807256273846272", "revision": "42", "anonymizeIP": false, "enableForceParameters": false, "experimental": {"trimPages": true}, "projectId": "4807256273846272", "layers": [{"changes": null, "id": "5545894414647296", "name": null, "commitId": "6528785164533760", "groupId": null, "holdback": 0, "activation": {}, "integrationSettings": {}, "integrationStringVersion": 2, "experiments": [{"audienceIds": null, "audienceName": null, "changes": null, "id": "5810584390729728", "integrationSettings": null, "variations": [{"id": "5005240106221568", "name": null, "actions": []}, {"id": "5612758868164608", "name": null, "actions": [{"viewId": "4796865372225536", "changes": [{"id": "55EF6F09-B8FD-4392-A25B-3A2EA5796D9E", "type": "redirect", "dependencies": [], "dest": "https://sechava4.github.io/page2.html", "preserveParameters": true, "allowAdditionalRedirect": false}]}]}], "weightDistributions": [{"entityId": "5005240106221568", "endOfRange": 5000}, {"entityId": "5612758868164608", "endOfRange": 10000}], "name": null, "bucketingStrategy": null, "experimentMetadata": {"allocationPolicy": "manual", "layerId": "5545894414647296"}}], "policy": "single_experiment", "viewIds": ["4796865372225536"], "weightDistributions": null, "decisionMetadata": null}], "groups": [], "audiences": [], "listTargetingKeys": [], "visitorAttributes": [], "visitorIdLocator": null, "integrationSettings": [], "views": [{"id": "4796865372225536", "category": "other", "apiName": "4807256273846272_url_targeting_for_ikea_redirect", "name": null, "staticConditions": ["and", ["or", {"match": "simple", "type": "url", "value": "https://sechava4.github.io/"}]], "deactivationEnabled": false, "undoOnDeactivation": false, "tags": []}], "events": [], "dimensions": [], "interestGroups": [], "tagGroups": []}
+    window.optimizely = window.optimizely || [];
+    window.optimizely.push({
+      type: 'load',
+      data: mockData
+    });
+  </script>
+  <script src="http://localhost:9999/dist/client.js"></script>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PK8V99HJ');</script>
+  })(window,document,'script','dataLayer','GTM-PK8V99HJ');</script> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A simple dummy HTML template for GitHub Pages">
   <title>My GitHub Pages Site</title>
